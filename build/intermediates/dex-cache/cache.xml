@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="F:\AndroidStudioProjects\XingCard\app\libs\bmob_v3.1.1beta.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="3b70cca78172af77118481a3f097b542e55e55a6">
+        <dex dex="F:\AndroidStudioProjects\XingCard\app\build\intermediates\pre-dexed\release\bmob_v3.1.1beta-e65456b93d80b590f3e60aaff55e64f286e2ba7d.jar" />
+    </item>
+    <item
+        jar="F:\AndroidStudioProjects\XingCard\app\build\intermediates\exploded-aar\XingCard\library\unspecified\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="10aea9f725b0359319c85da474d034657e324296">
+        <dex dex="F:\AndroidStudioProjects\XingCard\app\build\intermediates\pre-dexed\release\classes-ffdeec3bba84e7a576de9d414f3e75566e074488.jar" />
+    </item>
+    <item
+        jar="F:\AndroidStudioProjects\XingCard\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.1\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="4486e953d1f35f8ccab098b1dd67146366d5f731">
+        <dex dex="F:\AndroidStudioProjects\XingCard\app\build\intermediates\pre-dexed\release\classes-85afb248bb3e4e9f1b5c26f8590c9dcb8fa83fb9.jar" />
+    </item>
+    <item
+        jar="F:\AndroidStudioProjects\XingCard\app\libs\nineoldandroids-2.4.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="59f19e43354d32de831379c23ce03bb259a4c2b7">
+        <dex dex="F:\AndroidStudioProjects\XingCard\app\build\intermediates\pre-dexed\release\nineoldandroids-2.4.0-c376c0b9752f51c4648e8c50ef8c5d91a5ea382a.jar" />
+    </item>
+    <item
+        jar="D:\android-sdk-windows\extras\android\m2repository\com\android\support\support-annotations\22.2.1\support-annotations-22.2.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="61a0ff5c29295ec56d7e0bd3d25d95dbf71b4b2b">
+        <dex dex="F:\AndroidStudioProjects\XingCard\app\build\intermediates\pre-dexed\release\support-annotations-22.2.1-b68c8595ad7161256bdb15b0625f656ffd9caa8d.jar" />
+    </item>
+    <item
+        jar="F:\AndroidStudioProjects\XingCard\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="f8efd0096475e0daf054267b61544e10dc776503">
+        <dex dex="F:\AndroidStudioProjects\XingCard\app\build\intermediates\pre-dexed\release\classes-325b4005104da4ca6f272846c774cf119e85a3d6.jar" />
+    </item>
+    <item
+        jar="F:\AndroidStudioProjects\XingCard\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\jars\libs\internal_impl-22.2.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="c471eaaba13ff64f6e0383d1c30a9cdc9a97efeb">
+        <dex dex="F:\AndroidStudioProjects\XingCard\app\build\intermediates\pre-dexed\release\internal_impl-22.2.1-045292fd2a366090fd38ffa7c887a93b32200da3.jar" />
+    </item>
+    <item
+        jar="F:\AndroidStudioProjects\XingCard\app\libs\gson-2.2.3.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="126d1ea978aa87b87c90f32beac4dc966a318982">
+        <dex dex="F:\AndroidStudioProjects\XingCard\app\build\intermediates\pre-dexed\release\gson-2.2.3-d987fbfc84c42c53d5184ad90b8a1ff348396de6.jar" />
+    </item>
+
+</items>

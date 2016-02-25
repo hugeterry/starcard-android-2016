@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xingcard">
+    <!-- 修改存储卡 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+
+    <uses-permission android:name="android.permission.INSTALL_PACKAGES" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/xingcard"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".SplashActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.xingcard.LoginActivity" />
+        <activity
+            android:name="com.xingcard.MainActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
+        <activity
+            android:name="com.xingcard.MainActivity_Message"
+            android:screenOrientation="portrait"
+            android:theme="@style/dialogcustom" />
+        <activity android:name="com.xingcard.TwoActivity" />
+        <activity android:name="com.xingcard.baymax.Baymax" />
+        <activity android:name="com.xingcard.shequ.Shequ" />
+        <activity android:name="com.xingcard.shequ.AddShequ" />
+
+        <activity
+            android:name="com.xingcard.AboutActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xingcard.AddActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.xingcard.update.DownLoadDialog"
+            android:theme="@style/MyDialogStyle" />
+        <activity
+            android:name="com.xingcard.update.UpdateDialog"
+            android:theme="@style/MyDialogStyle" />
+    </application>
+
+</manifest>

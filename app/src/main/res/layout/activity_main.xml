@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--顶部遮挡缝隙部分-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_gravity="top"
+        android:background="@color/guillotine_background" />
+
+    <!--标题栏-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            style="@style/Toolbar"
+            app:contentInsetStart="0dp"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <ImageView
+
+                android:id="@+id/content_hamburger"
+                style="@style/ImageView.Hamburger"
+                android:src="@drawable/ic_menu_90" />
+
+            <TextView
+                android:id="@+id/tv01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="星名片"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <com.sevenheaven.segmentcontrol.SegmentControl xmlns:segmentcontrol="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/seg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:textSize="16sp"
+                segmentcontrol:colors="#ffffff"
+                segmentcontrol:cornerRadius="5dip"
+                segmentcontrol:direction="horizon"
+                segmentcontrol:horizonGap="12dip"
+                segmentcontrol:texts="短号|长号"
+                segmentcontrol:verticalGap="8dip" />
+
+        </android.support.v7.widget.Toolbar>
+        <!--
+                android:groupIndicator="@null" 取消默认图片
+                android:childIndicatorLeft 设置孩子左边间距
+                android:dividerHeight 这个高度一定要设置，不然显示不出来分割线，估计默认为0 吧
+                android:childDivider="@drawable/child_bg" 这个直接引color,或者图片会导致整个孩子背景都为这个颜色
+               -->
+
+        <com.xingcard.address.ui.StickyLayout
+            android:id="@+id/sticky_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/sticky_header"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="#E8ECEB"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <!--EditText不能自动获取焦点解决之道：
+                   在EditText的父级控件中找一个，设置成
+                   android:focusable="true"
+                   android:focusableInTouchMode="true"
+                -->
+
+
+                <com.xingcard.address.ui.ClearEditText
+                    android:id="@+id/filter_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="6dp"
+                    android:layout_marginRight="40dp"
+                    android:background="@drawable/search_bg"
+                    android:drawableLeft="@drawable/ic_action_search"
+                    android:hint="搜索姓名、号码"
+                    android:padding="3dp"
+                    android:singleLine="true"
+                    android:textColor="#959595"
+                    android:textColorHint="#959595"
+                    android:textSize="14sp" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/sticky_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.xingcard.address.ui.PinnedHeaderExpandableListView
+                    android:id="@+id/expandablelist"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:cacheColorHint="@null"
+                    android:childDivider="@drawable/child_bg"
+                    android:childIndicatorLeft="0dp"
+                    android:divider="@color/Grey"
+                    android:dividerHeight="1dp"
+                    android:groupIndicator="@null"
+                    android:scrollbarAlwaysDrawHorizontalTrack="false"></com.xingcard.address.ui.PinnedHeaderExpandableListView>
+            </LinearLayout>
+        </com.xingcard.address.ui.StickyLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
